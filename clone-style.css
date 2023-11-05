@@ -1,0 +1,350 @@
+*{
+    margin:0;
+    padding:0;
+}
+:root{
+    --my-textblue: #0c2964;
+    --my-btnblue:#1464ff;
+}
+
+
+body{
+    overflow:auto;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    /* text-align: center; */
+    scroll-behavior: smooth;
+    font-family: "ABCArizonaMix",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size:0.9rem;
+}
+a{
+    text-decoration:none;
+    color:inherit;
+}
+nav{
+    width:100vw;
+    box-shadow: 0 10px 20px rgba(10,30,70,.1);
+    
+}
+ul li a{
+    text-decoration: none;
+    color:inherit;
+    font:inherit;
+}
+ul li{
+    list-style-type: none;
+    margin:0 0px;
+}
+h1,h2,h3{
+    /* clear: both; */
+    font-family: "MessinaSans";
+    margin: 0 0 15px;
+    font-weight: 500;
+    color:var(--my-textblue);
+    width:85%;
+    font-size:3.3rem;
+    line-height:1.02em;
+}
+h3{
+    width:75%;
+    font-size:2.5rem;
+}
+h3{
+    font-size:2.0rem;
+}
+p{
+    font-weight:400;
+    color:rgb(0, 0, 0);
+    font-size:0.9rem;
+    width:90%;
+    line-height: 1.3rem;
+}
+#headpg{
+    width:75%;
+}
+#longpg{
+    width:75%;
+}
+.headlink{
+    margin:0 30px;
+}
+.headlink{}
+#navlogin{
+    padding:15px 25px;
+    font-size:1em;
+    width:100%;
+}
+#navbox{
+    width:76vw;
+    justify-content:space-between;
+}
+#logo{
+   width:10%;
+   height:10%;
+}
+.textplus{
+    width:60%;
+}
+#btndown{
+    width:100%;
+    height:100px;
+    margin-top:80px;
+    padding:20px 0;
+    display:flex;
+    flex-direction: column;
+    column-gap: 30px;
+    justify-content: center;
+}
+#otherbtn{
+    width:100%;
+    margin:10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-direction: row;
+    /* width:fit-content; */
+}
+
+.primarybtn{
+    font-size:1.5rem;
+    background:var(--my-btnblue);
+    padding:20px 25px;
+    color:white;
+    border:none;
+    border-radius:10px;
+    box-shadow: 0 10px 20px rgba(10,30,70,.1);
+}
+.textplusbtn{
+    background:white;
+    border:rgb(59, 59, 59) 1px solid;
+    border-radius:10px;
+    width:48%;
+    padding:20px 10px;
+    box-sizing:border-box;
+    box-shadow: 0 10px 20px rgba(10,30,70,.1);
+}
+.tertiarybtn{
+    background:none;
+    margin:10px 10px 10px 0;
+    box-sizing:border-box;
+    color:var(--my-btnblue);
+}
+.rowbox{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: row;
+    box-sizing:border-box;
+    padding:6px;
+}
+.hero{
+    margin:0 auto;
+    width:76vw;
+}
+.herobox{
+    margin:0 auto;
+    padding: 0 auto;
+    box-sizing:border-box;
+    width:38vw;
+    margin-top:5vw;
+    
+}
+.textup{
+    margin:30px 0;
+}
+.textup h1{
+    margin:15px 0;
+}
+.heroimage{
+    width:40%;
+}
+
+.heroimg1{
+    width:32%;
+    height:60%;
+    z-index:3;
+    position:absolute;
+    background:transparent;
+    top:200px;
+    transform:scale(1,1);
+    animation-fill-mode: forwards;
+    animation:himg1move 0.8s ease-in-out;
+}
+@keyframes himg1move{
+    0%{
+        transform:scale(0.3,0.3);
+        opacity:0; 
+    }
+    100%{
+        transform:scale(1,1);
+        opacity:1;
+    }
+}
+.heroimg2{
+    width:50%;
+    height:80%;
+    z-index:2;
+    position: relative;
+    background:transparent;
+    left:250px;
+    top:100px;
+    transform:scale(1,1);
+    opacity:1;
+    animation:himg1move 1s ease-in-out;
+}
+.heroimg3{
+    width:30%;
+    height: 30%;
+    right:180px;
+    top:-100px;
+    position:relative;
+    z-index:1;
+    transform:scale(1,1);
+    opacity:1;
+    animation:himg1move 1.1s ease-in-out;
+}
+.heroimg4{
+    width:40%;
+    height: 60%;
+    right:-25px;
+    top:-180px;
+    position:relative;
+    z-index:0;
+    transform:scale(1,1);
+    opacity:1;
+    animation:himg1move 1.2s ease-in-out;
+}
+.twoblocks{
+    justify-content: space-between;
+    column-gap:80px;
+}
+.tb-textpart{
+    opacity:1;
+    width:fit-content;
+}
+#galaxybox:hover .tb-textpart{
+    animation-fill-mode: forwards;
+    animation:tb-textmove .9s ease-in-out;
+}
+@keyframes tb-textmove{
+    0%{
+        opacity:0;
+        transform:translateY(50px);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0px);
+    }
+}
+.tb-imagepart{
+    text-align: center;
+    width:80%;
+}
+
+.imageup{
+    z-index:2;
+    position:absolute;
+    width:33%;
+    opacity:1;
+    animation:himg1move 0.7s ease-in-out;
+
+}
+.imagedown{
+    z-index:1;
+    position:relative;
+    width:100%;
+    height:100%;
+    top:-50px;
+    opacity:1;
+    animation:himg1move 0.9s ease-in-out;
+
+}
+#idm{
+    margin-top:50px;
+    margin-left:70px;
+}
+#Edtech{
+    margin-left:70px;
+}
+#laptop{
+    margin-top:40px;
+    text-align:left;
+}
+#New{
+    margin-top:10px;
+}
+#bluebtn{
+    padding:15px 25px;
+    font-size:1em;
+    margin-top:30px;
+    width:fit-content;
+    height:40px;
+    border-radius:10px;
+    border:none;
+    color:white;
+    background:var(--my-btnblue);
+}
+.bigback{
+    background:#0a1e46;
+    width:100%;
+    height:100%;
+    color:white;
+    justify-content: space-evenly;
+    padding:100px;
+    
+}
+.bigback p{
+    color:white;
+    width:70%;
+}
+.bigback h3{
+    font-size:2.5rem;
+    color:white;
+    width:80%;
+}
+.bigback img{
+    width:40%;
+    align-self:right;
+}
+#star{
+    text-align:right;
+}
+.ctasection{
+    width:100%;
+    height:100%;
+    padding:50px auto;
+    margin: 0 auto;
+    flex-direction: column;
+    text-align: center;
+    background:var(--my-btnblue);
+    color:white;
+}
+input{
+    background:transparent;
+    border:1px solid white;
+    width:400px;
+    height:40px;
+    border-radius:20px;
+}
+#submit{
+    border-radius:10px;
+    border:none;    
+    width:130px;
+    height: 40px;
+    background:white;
+    color:var(--my-btnblue);
+}
+.ctasection h3{
+    text-align:center;
+    width:fit-content;
+    color:white;
+    padding:100px 0 20px 0;
+}
+form{
+    text-align: center;
+}
+.formcta{
+    padding-bottom:100px;
+}
